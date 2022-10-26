@@ -1,4 +1,3 @@
-import urllib.parse
 import requests
 
 main_api = "http://ip-api.com/json/"
