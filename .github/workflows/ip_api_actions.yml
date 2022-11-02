@@ -1,0 +1,11 @@
+name: ip_api_actions
+
+on: [push]
+
+jobs:
+  check-pip-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: python --version
+      - run: bats -v
